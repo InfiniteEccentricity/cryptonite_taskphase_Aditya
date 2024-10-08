@@ -215,3 +215,9 @@ hacker@commands~finding-files:~$ cat /usr/share/icons/hicolor/36x36/intl/flag <b
 ### pwn.college{40IXW1no7mgK3Wke_E5M3GJ1ttO.dJzM4QDL5gjN0czW} <br>
 
 ## Linking Files
+hacker@commands~linking-files:~$ /challenge/catflag <br>
+About to read out the /home/hacker/not-the-flag file! <br> 
+hacker@commands~linking-files:~$ ln -s /flag ~/not-the-flag <br>
+hacker@commands~linking-files:~$ /challenge/catflag <br>
+About to read out the /home/hacker/not-the-flag file! <br>
+### pwn.college{AegRHO7R-caoatOGfAQFqyDpcyM.dlTM1UDL5gjN0czW}
