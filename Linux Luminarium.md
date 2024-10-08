@@ -12,59 +12,6 @@
 ###### Success! Here is your flag:
 ### pwn.college{8349BjsjSQhxyjhxogvK4UMRhdM.dhjNyUDL5gjN0czW}
 
-## PONDERING PATHS
-
-## The Root
-###### hacker@paths~the-root:~$ /pwn
-###### BOOM!!!
-###### Here is your flag:
-### pwn.college{ULDRvX4idMTfWcOdnsYqfII5Zn6.dhzN5QDL5gjN0czW}
-
-## Program and Absolute Paths
-###### hacker@paths~program-and-absolute-paths:~$ /challenge/run
-###### Correct!!!
-###### /challenge/run is an absolute path! Here is your flag:
-#### pwn.college{Yx6O9yNUrCGJSBSynACL5Bi5Ofe.dVDN1QDL5gjN0czW}
-
-## Position Elsewhere
-###### hacker@paths~position-yet-elsewhere:~$ /challenge/run
-###### Incorrect...
-###### You are not currently in the /usr/share/build-essential directory.
-###### Please use the `cd` utility to change directory appropriately.
-###### hacker@paths~position-yet-elsewhere:~$ cd /usr/share/build-essential
-###### hacker@paths~position-yet-elsewhere:/usr/share/build-essrial$ /challenge/run
-###### Correct!!!
-###### /challenge/run is an absolute path, invoked from the right directory!
-###### Here is your flag:
-### pwn.college{0IKM1Z7BtMpF1Ap8lz_rS-0omZA.dhDN1QDL5gjN0czW}
-
-## Implicit relative paths, from /
-###### hacker@paths~implicit-relative-paths-from-:/$ challenge/run
-###### Correct!!!
-###### challenge/run is a relative path, invoked from the right directory!
-###### Here is your flag:
-### pwn.college{Aj7g5qHIKBeGWQ7KUP0G0xxWSqB.dlDN1QDL5gjN0czW}
-
-## Explicit relative paths, from /
-###### hacker@paths~explicit-relative-paths-from-:/$ ./challenge/run
-###### Correct!!!
-###### ./challenge/run is a relative path, invoked from the right directory!
-###### Here is your flag:
-### pwn.college{81z5nJ_7CUJXMM_Lo2BVyNycY3G.dBTN1QDL5gjN0czW}
-
-## Implicit relative paths, from /
-###### hacker@paths~implicit-relative-path:~$ cd /challenge
-###### hacker@paths~implicit-relative-path:/challenge$ ./run nme
-###### Correct!!!
-###### ./run is a relative path, invoked from the right directory!
-###### Here is your flag:
-### pwn.college{s-SKVRs5W9TxaKWG60U14G_nkUR.dFTN1QDL5gjN0czW}
-
-## Home Sweet Home
-###### hacker@paths~home-sweet-home:~$ /challenge/run ~/a
-###### Writing the file to /home/hacker/a!
-###### ... and reading it back to you:
-### pwn.college{c27W1yGoXR9l7pqhdGsvUI_cu6j.dNzM4QDL5gjN0czW}
 
 # Comprehending Commands
 
@@ -221,4 +168,66 @@
 ###### hacker@commands~an-epic-filesystem-quest:/usr/share/locale/pt_PT/LC_MESSAGES$ cat TIP
 ###### CONGRATULATIONS! Your perserverence has paid off, and you have found the flag!
 ###### It is: pwn.college{E7U_9hP0p9Nf21a_b5itjKEHAwd.dljM4QDL5gjN0czW}
+
+## Making Directories
+
+###### hacker@commands~making-directories:~$ cd /tmp/pwn
+###### ssh-entrypoint: cd: /tmp/pwn: No such file or directory
+###### hacker@commands~making-directories:~$ mkdir /tmp/pwn
+###### hacker@commands~making-directories:~$ cd /tmp/pwn
+###### hacker@commands~making-directories:/tmp/pwn$ touch college
+###### hacker@commands~making-directories:/tmp/pwn$ /challenge/run
+###### Success! Here is your flag:
+###### pwn.college{IRoP36PE38Um2Ha-UILuvx_setD.dFzM4QDL5gjN0czW}
+
+## Finding Files
+hacker@commands~finding-files:/opt/pwndbg/.venv/lib/python3.8/site-packages/pwnlib/flag$ cd <br>
+hacker@commands~finding-files:~$ find -name flag <br>
+hacker@commands~finding-files:~$ find /  -name flag <br>
+find: ‘/tmp/tmp.MiOQGWw5Zc’: Permission denied <br>
+find: ‘/etc/ssl/private’: Permission denied <br>
+/usr/local/lib/python3.8/dist-packages/pwnlib/flag <br>
+/usr/local/share/radare2/5.9.5/flag <br> 
+/usr/share/icons/hicolor/36x36/intl/flag <br>
+^[[Afind: ‘/var/cache/apt/archives/partial’: Permission denied <br>
+find: ‘/var/cache/ldconfig’: Permission denied <br>
+find: ‘/var/cache/private’: Permission denied <br>
+find: ‘/var/lib/apt/lists/partial’: Permission denied <br>
+find: ‘/var/lib/mysql-files’: Permission denied <br>
+find: ‘/var/lib/private’: Permission denied <br>
+find: ‘/var/lib/mysql’: Permission denied <br>
+find: ‘/var/lib/mysql-keyring’: Permission denied <br>
+find: ‘/var/lib/php/sessions’: Permission denied <br>
+find: ‘/var/log/private’: Permission denied <br> 
+find: ‘/var/log/apache2’: Permission denied <br>
+find: ‘/var/log/mysql’: Permission denied <br>
+find: ‘/run/mysqld’: Permission denied <br>
+find: ‘/run/sudo’: Permission denied <br>
+find: ‘/root’: Permission denied <br>
+/opt/pwndbg/.venv/lib/python3.8/site-packages/pwnlib/flag <br>
+/opt/radare2/libr/flag <br>
+find: ‘/proc/tty/driver’: Permission denied <br>
+find: ‘/proc/1/task/1/fd’: Permission denied <br>
+find: ‘/proc/1/task/1/fdinfo’: Permission denied <br> 
+find: ‘/proc/1/task/1/ns’: Permission denied <br>
+find: ‘/proc/1/fd’: Permission denied <br>
+find: ‘/proc/1/map_files’: Permission denied <br>
+find: ‘/proc/1/fdinfo’: Permission denied <br>
+find: ‘/proc/1/ns’: Permission denied <br>
+find: ‘/proc/7/task/7/fd’: Permission denied <br>
+find: ‘/proc/7/task/7/fdinfo’: Permission denied <br>
+find: ‘/proc/7/task/7/ns’: Permission denied <br>
+find: ‘/proc/7/fd’: Permission denied <br>
+find: ‘/proc/7/map_files’: Permission denied <br>
+find: ‘/proc/7/fdinfo’: Permission denied <br>
+find: ‘/proc/7/ns’: Permission denied <br>
+/nix/store/1yagn5s8sf7kcs2hkccgf8d0wxlrv5sz-radare2-5.9.0/share/radare2/5.9.0/flag <br>
+/nix/store/pmvk2bk4p550w182rjfm529kfqddnvh3-python3.11-pwntools-4.12.0/lib/python3.11/site-packages/pwnlib/flag <br>
+hacker@commands~finding-files:~$ ls /usr/share/icons/hicolor/36x36/intl/flag <br>
+/usr/share/icons/hicolor/36x36/intl/flag <br>
+hacker@commands~finding-files:~$ <br>
+hacker@commands~finding-files:~$ cat /usr/share/icons/hicolor/36x36/intl/flag <br>
+### pwn.college{40IXW1no7mgK3Wke_E5M3GJ1ttO.dJzM4QDL5gjN0czW} <br>
+
+## Linking Files
 
