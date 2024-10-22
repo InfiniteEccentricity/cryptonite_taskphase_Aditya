@@ -24,4 +24,10 @@ Used chmod (+ or -) to change permissions accordingly, then chmod u+r the flag f
 ![image](https://github.com/user-attachments/assets/0e02b2dd-2387-495f-b125-df8e23623519)
 ![image](https://github.com/user-attachments/assets/063f084f-ecd0-44d2-8f12-a18e8d9b95a7)
 
-## 
+## Permissions Setting Practice
+Used chmod (= to directly assign permissions), then chmod u=r flag file to read it through cat.
+![image](https://github.com/user-attachments/assets/467f1256-5cda-4f09-b738-577c4dced3b9)
+
+# The SUID bit
+chmod to add SUID bit to /challenge/getroot, and then run it with the SUID bit, which opens a shell with root permissions, after which cat can get /flag.
+![image](https://github.com/user-attachments/assets/a1eb217c-7503-4a6b-9572-2b8f8969b791)
