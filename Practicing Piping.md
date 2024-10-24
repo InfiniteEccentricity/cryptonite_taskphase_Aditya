@@ -26,3 +26,10 @@
 ## Duplicating piped data with tee
 ![image](https://github.com/user-attachments/assets/b91d5c5c-4bdb-451b-9d53-20a5b4d934d8)
 
+## Writing to multiple programs
+>(program) allows us to run a program with the input from the previous command
+![image](https://github.com/user-attachments/assets/5d1b4ec8-3241-4eed-83d7-3b537a529f49)
+
+## Split-piping stderr and stdout
+![image](https://github.com/user-attachments/assets/0162f800-2b0a-49b4-b078-1d9be1db00f2)
+
